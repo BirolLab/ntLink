@@ -141,7 +141,7 @@ conda install -c bioconda --file requirements.txt
 ```
 
 ## License
-ntLink Copyright (c) 2020 British Columbia Cancer Agency Branch. All rights reserved.
+ntLink Copyright (c) 2020-present British Columbia Cancer Agency Branch. All rights reserved.
 
 ntLink is released under the GNU General Public License v3
 
