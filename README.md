@@ -1,9 +1,9 @@
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/bcgsc/ntlink)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/BirolLab/ntlink)
 ![Conda](https://img.shields.io/conda/dn/bioconda/ntlink?label=Conda)
 [![Published in BMC Bioinformatics](https://img.shields.io/badge/Published%20in-BMC%20Bioinformatics-blue)](https://doi.org/10.1186/s12859-021-04451-7)
 [![Published in Current Protocols](https://img.shields.io/badge/Published%20in-Current%20Protocols-blue)](https://doi.org/10.1002/cpz1.733)
 
-![Logo](https://github.com/bcgsc/ntLink/blob/master/ntlink-logo.png)
+![Logo](https://github.com/BirolLab/ntLink/blob/master/ntlink-logo.png)
 
 ## Minimizer-based genome assembly scaffolding and mapping using long reads and minimizers
 
@@ -77,7 +77,7 @@ ntLink scaffold target=my_assembly.fa reads=long_reads.fq.gz k=32 w=250
 
 The post-ntLink scaffolds file will have the suffix `*ntLink.scaffolds.fa`
 
-See our [wiki](https://github.com/bcgsc/ntLink/wiki) for more information about output file formats.
+See our [wiki](https://github.com/BirolLab/ntLink/wiki) for more information about output file formats.
 
 
 ### Gap-filling
@@ -100,7 +100,7 @@ See the wiki page for more details.
 To only run the pairing stage of `ntLink` (the stage where the long reads are mapped to the contigs), use the `pair` target for the `ntLink` command. The mappings can also be output in PAF-like format by specifying `paf=True`.
 
 
-**For more information about the ntLink algorithm and tips for running ntLink see our [wiki](https://github.com/bcgsc/ntLink/wiki)**
+**For more information about the ntLink algorithm and tips for running ntLink see our [wiki](https://github.com/BirolLab/ntLink/wiki)**
 
  ## Installation
  ntLink is available from conda and homebrew package managers.
@@ -117,7 +117,7 @@ To only run the pairing stage of `ntLink` (the stage where the long reads are ma
  
  Installing from source code:
  ```
-curl -L --output ntLink-1.3.11.tar.gz https://github.com/bcgsc/ntLink/releases/download/v1.3.11/ntLink-1.3.11.tar.gz && tar xvzf ntLink-1.3.11.tar.gz 
+curl -L --output ntLink-1.3.11.tar.gz https://github.com/BirolLab/ntLink/releases/download/v1.3.11/ntLink-1.3.11.tar.gz && tar xvzf ntLink-1.3.11.tar.gz 
 ```
 
 #### Testing your installation
@@ -130,8 +130,8 @@ The expected output files can be found in: `tests/expected_outputs`
 
 ## Dependencies
 * Python 3.7+ ([Numpy](https://numpy.org/), [Python-igraph](https://igraph.org/python/))
-* [btllib](https://github.com/bcgsc/btllib) 1.6.2 or lower
-* [ABySS v2.3.0+](https://github.com/bcgsc/abyss)
+* [btllib](https://github.com/bcgsc/btllib) 1.7.1 or higher
+* [ABySS v2.3.0+](https://github.com/BirolLab/abyss)
 * GCC 6+ or Clang 5+ with OpenMP
 * [zlib](https://zlib.net/)
 
